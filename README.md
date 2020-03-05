@@ -4,4 +4,5 @@
 - l'interface d'utilisateur est implementée par Java Swing 
 - cette interface permet de faire le choix de composant à construire 
 - Apres on valide le choix et un djalogue s'affiche pour la construction 
-- On peut donn 
+- On peut donner une note à l'application 
+
