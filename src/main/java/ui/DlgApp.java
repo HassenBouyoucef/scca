@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 public class DlgApp extends JDialog {
     DlgApp oJFrame = this;
     JList jList = new JList<>();
+    JLabel messageLabel = new JLabel("Cette Application est en conception!");
     JButton jButton = new JButton("Build another Application");
 
     JLabel jLabel = new JLabel("Did you appreciate this application ?");
@@ -36,12 +37,18 @@ public class DlgApp extends JDialog {
 
 
     private JPanel panelCenter() {
+
+        ImageIcon imageIcon = new ImageIcon(("icon/pngConst.png"));
+        Image image = imageIcon.getImage();
+        Image newimg = image.getScaledInstance(120, 120, java.awt.Image.SCALE_SMOOTH);
+        imageIcon = new ImageIcon(newimg);
+        messageLabel.setIcon(imageIcon);
         JPanel jPanel = new JPanel();
         jPanel.setBackground(Color.white);
         jPanel.setPreferredSize(new Dimension(500, 250));
         jPanel.setBorder(BorderFactory.createTitledBorder("Application construit"));
         jPanel.add(jList);
-
+        jPanel.add(messageLabel);
         return jPanel;
     }
 
