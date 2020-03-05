@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 public class DlgApp extends JDialog {
     DlgApp oJFrame = this;
     JList jList = new JList<>();
-    JLabel messageLabel = new JLabel("Cette Application est en conception!");
+    JLabel messageLabel = new JLabel("Cette application est en conception!");
     JButton jButton = new JButton("Build another Application");
 
     JLabel jLabel = new JLabel("Did you appreciate this application ?");
@@ -56,7 +56,7 @@ public class DlgApp extends JDialog {
         jButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int selection = JOptionPane.showOptionDialog(null, jLabel, "Note pour application",
+                int selection = JOptionPane.showOptionDialog(null, jLabel, "Note pour l'application",
                         JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, notelist,
                         notelist[0]);
 
